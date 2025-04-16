@@ -1,12 +1,16 @@
 from flask import Flask, render_template, request, jsonify
 import sqlite3
 
+<<<<<<< HEAD
 app = Flask (__name__)
 @app.route("/")
 def home() :
     return render_template("index.html")
 app.run(debug=True)
 
+=======
+app = Flask(__name__)
+>>>>>>> 6192e72d679513fc60f1d6685f20faab903e3fad
 
 def init_db():
     conn = sqlite3.connect('snake.db')
